@@ -46,7 +46,7 @@ The solver uses computer vision techniques to:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/hcaptcha-missing-arch.git
+git clone https://github.com/glizzykingdreko/hcaptcha-missing-arch.git
 cd hcaptcha-missing-arch
 ```
 
