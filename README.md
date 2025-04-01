@@ -91,28 +91,32 @@ When debug mode is enabled, the solver saves intermediate images to the `debug_o
 Here's a visual demonstration of how the solver processes the challenge:
 
 1. **Grayscale Conversion**
-   ![Grayscale Image](https://raw.githubusercontent.com/glizzykingdreko/hcaptcha-missing-arch/main/example_solving/debug_1_gray.png)
    The input image is converted to grayscale to simplify processing.
 
+![Grayscale Image](https://raw.githubusercontent.com/glizzykingdreko/hcaptcha-missing-arch/main/example_solving/debug_1_gray.png)
+
 2. **Gaussian Blur**
-   ![Blurred Image](https://raw.githubusercontent.com/glizzykingdreko/hcaptcha-missing-arch/main/example_solving/debug_2_blurred.png)
    Gaussian blur is applied to reduce noise and smooth edges.
 
+![Blurred Image](https://raw.githubusercontent.com/glizzykingdreko/hcaptcha-missing-arch/main/example_solving/debug_2_blurred.png)
+
 3. **Edge Detection**
-   ![Edge Detection](https://raw.githubusercontent.com/glizzykingdreko/hcaptcha-missing-arch/main/example_solving/debug_3_edges.png)
    Canny edge detection highlights the boundaries of the donut.
 
+![Edge Detection](https://raw.githubusercontent.com/glizzykingdreko/hcaptcha-missing-arch/main/example_solving/debug_3_edges.png)
+
 4. **Circle Detection**
-   ![Circle Detection](https://raw.githubusercontent.com/glizzykingdreko/hcaptcha-missing-arch/main/example_solving/debug_4_circle_detection.png)
    The Hough Circle Transform identifies the main donut shape and its boundaries.
 
+![Circle Detection](https://raw.githubusercontent.com/glizzykingdreko/hcaptcha-missing-arch/main/example_solving/debug_4_circle_detection.png)
+
 5. **Cartesian Visualization**
-   ![Cartesian Visualization](https://raw.githubusercontent.com/glizzykingdreko/hcaptcha-missing-arch/main/example_solving/debug_X_basic_cartesian.png)
    The donut is projected onto a Cartesian plane for analysis.
+![Cartesian Visualization](https://raw.githubusercontent.com/glizzykingdreko/hcaptcha-missing-arch/main/example_solving/debug_X_basic_cartesian.png)
 
 6. **Final Result**
-   ![Final Result](https://raw.githubusercontent.com/glizzykingdreko/hcaptcha-missing-arch/main/example_solving/debug_7_original_with_missing_dot.png)
    The solver identifies the missing arch and marks its coordinates.
+![Final Result](https://raw.githubusercontent.com/glizzykingdreko/hcaptcha-missing-arch/main/example_solving/debug_7_original_with_missing_dot.png)
 
 ## How It Works
 
